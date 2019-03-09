@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">Reto CSS</h1>
+    <ul>
+        <li>Item #1</li>
+        <li>Item #2</li>
+        <li>Item #3</li>
+        <li>Item #4</li>
+        <li>Item #5</li>
+        <li>Item #6</li>
+        <li>Item #7</li>
+        <li>Item #8</li>
+        <li>Item #9</li>
+    </ul>
+</body>
+
+<style>
+    * {
+        margin: 15px;
+        padding: 0;
+        border-bottom: 2px solid black;
+    }
+
+    h1.title{
+        color:wheat;
+        text-align:center;
+    }
+
+    body{
+        background:black;        
+    }
+    
+    ul{
+        list-style-type: none;
+    }
+
+    li{  
+          
+        box-sizing: border-box;
+        
+    }
+
+    li:nth-child(odd){
+        color: white;
+    }
+
+    li:nth-child(even){
+        color:tomato;
+    }
+
+    li:nth-child(odd):hover {
+        
+        background:rgb(78, 67, 65);          
+        border-bottom: 2px dotted green ; 
+        box-sizing: border-box;
+        
+    }
+
+    li:nth-child(even):hover {
+        
+        background:rgb(110, 83, 78);       
+        border-bottom: 2px solid red ;
+        box-sizing: border-box;
+    }
+
+    @media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+
+
+
+
+</style>
